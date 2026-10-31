@@ -90,11 +90,11 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px 12px;
   }
   @media (max-width: 680px) {
-    ul.tool-list { grid-template-columns: 1fr; }
+    ul.tool-list { grid-template-columns: minmax(0, 1fr); }
   }
 
   ul.tool-list li {
@@ -257,7 +257,7 @@
           <span class="icon">💬</span>
           <span class="info">
             <div class="name">문자 발송</div>
-            <div class="desc">종합소득세·수수료 청구·급여대장 요청 등 안내문자를 템플릿으로 작성하고 복사합니다</div>
+            <div class="desc">안내문자를 템플릿으로 작성하고 복사합니다</div>
           </span>
           <span class="arrow">→</span>
         </a>
